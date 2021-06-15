@@ -1,0 +1,27 @@
+Difference between Statically typed and dynamically typed languages
+
+Statically Typed Language;
+   
+	1. The type of variable known at compile time.
+	2. we can caught bugs very earlier because of all kinds of the things done by compailer.  
+	3. types are not allowed to change.
+  	Eg:JAVA, C , C++
+
+code example:
+	String str = "Hello";  //variable str statically typed as string
+	str = 5;               //would throw an error since str is supposed to be a string only
+
+
+Dynamically typed language;
+
+	1.type checking at run-time as opposed to compile-time.
+	2.it will save time to code.you can program quicker.
+	3.but it may come bugs lot beacause of type checking at run time.
+	4.types are allowed to change.
+	Eg: Python,Javascrip,Php etc
+
+code example:
+	str = "Hello" # variable str is linked to a string value
+	str = 5       # now it is linked to an integer value; perfectly OK
+
+  

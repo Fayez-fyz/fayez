@@ -1,0 +1,21 @@
+Scripting Language vs Programming Language;
+
+Scripting Language;
+
+	1.In scripting language you can run code without compailation.
+	2.Scripting languages usually have less access to the computers native abilities.
+        3.Scripting languages are a subset of programming languages.
+
+	Eg; Javascript, Pearl,Vbscript etc
+
+
+
+
+Programming Language;
+
+	1. In programming language compile the code before run it.
+	2. programming language usually have more access to the computers native abilities since they run on a subset of the original programming language.
+
+	Eg: C, C++, Java
+
+

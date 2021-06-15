@@ -1,0 +1,23 @@
+How browser renders the website:
+ 
+ 1. When the browser begins to receive the HTML data of a page over the network,
+    it immediately sets its parser to work to convert the HTML into a Document Object Model (DOM).
+    the first step of this parsing process is to break down the HTML into tokens that represent start tags,
+    end tags, and their contents. From that it can construct the DOM.
+
+ 2. When the parser comes across an external resource like a CSS or JavaScript file, it goes off to fetch those files. 
+    The parser will continue as a CSS file is being loaded,although it will block rendering until it has been loaded and parsed.
+    JavaScript files are a little different - by default they block parsing of the HTML whilst the JavaScript file is loaded and then parsed. 
+    there are two attributes that can be added to script tags to mitigate this: defer and async.
+ 
+ 3. The CSS Object Model (CSSOM) is a map of all CSS selectors and relevant properties for each selector in the form of a tree, with a root node, sibling, descendant, child, and other relationship.
+    The CSSOM is very similar to the Document Object Model (DOM). Both of them are part of the critical rendering path which is a series of steps that must happen to properly render a website.
+    The CSSOM, together with the DOM, to build the render tree, which is in turn used by the browser to layout and paint the web page.
+
+ 4. How and when the JavaScript resources are loaded will determine exactly when this happens, but at some point they will be parsed, compiled and executed. 
+    Different browsers have different JavaScript engines to perform this task. Parsing JavaScript can be an expensive process in terms of a computer's resources.
+ 
+ 5. The render tree is a combination of the DOM and CSSOM, and represents everything that will be rendered onto the page.
+    That does not necessarily mean all nodes in the render tree will be visually present.
+ 
+ 6. The rendering engine traverses the render tree, starting at the top and working down, calculating the coordinates at which each node should be displayed.

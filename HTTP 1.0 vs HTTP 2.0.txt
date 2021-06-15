@@ -1,0 +1,28 @@
+DIFF B/W HTTP 1.0 and 2.0:
+
+
+HTTP 1.0:
+	1. It can initiate only single request per TCP connection.
+
+	2.It is textual protocols, it consume more bandwidth and more error prone. 
+	when compare to HTTP 2.0 it is very slow protocol. 
+
+	3. It doesn't have header compression.
+
+	4. HTTP 1.0 it takes more time to load page.
+
+	5. HTTP 1.0 support only  GET, HEAD, PUT, and POST.
+
+HTTP 2.0:
+ 	1. It is binary protocal,consume less bandwidth, are more efficiently parsed and are less error-prone.
+	it handle elements such as whitespace, capitalization and line endings.
+
+	2. it can initiate multiple requests in parallel over a single TCP connection. 
+         As a result, web pages containing several elements are delivered over one TCP connection.
+	
+	3. HTTP/2 uses header compression to reduce the overhead caused by TCP’s slow-start mechanism.
+	
+	4.HTTP/2 servers push likely-to-be-used resources into a browser’s cache, even before they’re requested. 
+	This allows browsers to display content without additional request cycles.
+
+	5. Web browsers only support HTTP/2 via encrypted connections, increasing user and application security.
