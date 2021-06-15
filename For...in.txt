@@ -1,0 +1,25 @@
+For...in
+
+	It iterates over all enumerable properties of an object that are keyed by strings.
+
+Example:
+
+const object = { a: 1, b: 2, c: 3 };
+
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
+
+ output:
+ "a: 1"
+ "b: 2"
+ "c: 3"
+
+
+DIFF B/W For...in and For...of:
+
+Both for...in and for...of statements iterate over something.The main difference between them is what they iterate over.
+
+	1.The for...in statement iterates over the enumerable properties of an object, in an arbitrary order.
+
+        2.The for...of statement iterates over values that the iterable object defines to be iterated over.

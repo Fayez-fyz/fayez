@@ -1,0 +1,37 @@
+For...of :
+
+	It creates a loop iterating over iterable objects, including: built-in String, Array, array-like objects, TypedArray, Map, Set, and user-defined iterables.
+
+Example :
+1.
+
+const array1 = ['FAYEZ', 'KALAM', 'ARSATH'];
+
+for (const element of array1) {
+  console.log(element);
+}
+
+Output: 
+"FAYEZ"
+"KALAM"
+"ARSATH"
+
+2.
+const iterable = [10, 20, 30];
+
+for (let value of iterable) {
+  value += 1;
+  console.log(value);
+}
+Output:
+ 11
+ 21
+ 31
+
+DIFF B/W For...in and For...of:
+
+Both for...in and for...of statements iterate over something.The main difference between them is what they iterate over.
+
+	1.The for...in statement iterates over the enumerable properties of an object, in an arbitrary order.
+
+        2.The for...of statement iterates over values that the iterable object defines to be iterated over.
