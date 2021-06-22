@@ -50,7 +50,7 @@ console.log('PRIME NUMBERS : '+prm);
 
 // return all palindromes
 
-let arr2 = ["amma", "appa", "aayaa",'mairu' , "lusu","akka",'paithiyam '];
+let arr2 = ["amma", "appa", "aayaa", 'mami' , "lusu","akka",'paithiyam '];
 let pali = arr2.filter(function(w) {
   let len = w.length;
   for (let i = 0; i < len / 2; i++) {
